@@ -1,0 +1,210 @@
+.bienvenue{
+    font-size: 5em;
+    left: -1200px;
+}
+.logo{
+    width: 105px;
+    height: 31px;
+    position: relative;
+    top: 3px;
+}
+.language{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+}
+.pourquoi{
+    font-size: 1.7em;
+}
+.sous-titre::first-letter{
+    font-size: 1.1em;
+}
+.sous-titre{
+    position: relative;
+    top:25px;
+    left: -25px;
+}
+.gif{
+    border-radius: 50px;
+    border: #B5BAD8 2px solid;
+    padding: 4px 6px;
+    margin: 86px 24px;
+    width: 650px;
+    height: 360px;
+    position: relative;
+    left:-80px;
+}
+.section-1 {
+    display: flex;
+    width: 55%;
+    margin: auto;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+.section-1 div{
+    padding-right: 60px;
+    padding-top: 40px;
+    position: relative;
+    left: -80px;
+}
+.bouton-jeu{
+    font-size: 1.7em;
+    padding: 13px 17px;
+    color:#ffffff;
+    font-family: Manrope;
+    background-color: #1C8139;
+    border-radius: 15px;
+    position: relative;
+    top:-45px;
+    font-weight: 600;
+    transition: all 0.1s ease-in-out;
+}
+.bouton-jeu:hover{
+    text-decoration: none;
+    background-color: #126b2b;
+    color:#ffffff;
+}
+
+.bouton-categories{
+    font-size: 2.7em;
+    padding: 13px 17px;
+    color:rgba(11,22,44,0.8);
+    font-family: Manrope;
+    background-color: #b5bad8;
+    border-radius: 50px;
+    position: relative;
+    top:45px;
+    font-weight: 600;
+    transition: all 0.1s ease-in-out;
+}
+.bouton-categories:hover{
+    text-decoration: none;
+    background-color: grey;
+    color:rgba(11,22,44,0.8);
+}
+.section-2{
+    background-color: #DADADA;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.section-2 p{
+    color: #0B162C;
+    padding: 20px 100px;
+}
+.section-2 h2{
+    color: #0B162C;
+    font-size: 2em;
+    padding: 30px 0;
+}
+.section-4 h2{
+    text-align: start;
+    padding: 0 0 60px 50px;
+    font-size: 2.4em;
+}
+.jeu-recents{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px 350px;
+    gap: 20px;
+}
+.section-4{
+    padding: 0;
+    margin: 70px;
+}
+.section-4 div div{
+    color: #0B162C;
+    outline: #0B162C 2px solid;
+    outline-offset: 3px;
+    border: #0B162C 1px solid;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.048));
+}
+.section-4 div div p{
+    color: #0B162C;
+    font-size: 0.9em;
+    margin: 0 10px;
+}
+.section-4 div div h3{
+    font-size: 2.3em;
+    padding: 30px;
+    text-align: center;
+}
+.section-4 div h3{
+    font-size: 4em;
+    padding: 50px;
+    text-decoration: underline;
+}
+.soon{
+    color:brown;
+}
+.section-4 div div a:hover{
+    text-decoration: none;
+}
+h1{
+    font-size: 2.4em;
+    text-align: start;
+}
+.bigh1{
+    font-size: 4em;
+    text-align: center;
+    padding-bottom: 70px;
+}
+.merci{
+    font-size: 1.6em;
+    padding-top: 10px;
+}
+section{
+    text-align: center;
+}
+
+h2::first-letter{
+    font-size: 1.7em;
+    padding-left: 40px;
+}
+.fin{
+    font-size: 4em;
+    padding:  0 20px 20px 20px;
+}
+
+.question-mark{
+    width: 60px;
+    height: 60px;
+    padding-left: 110px;
+    padding-top: 40px;
+}
+.horloge{
+    width: 80px;
+    height: 80px;
+    margin-left: 40px;
+    position: relative;
+    top: 5px;
+    left: 50px;
+}
+.fleur{
+    padding: 90px 0 ;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: -100px;
+}
+.all-games{
+    font-size: 3.7em;
+    padding: 80px 17px;
+    color:#ffffff;
+    font-family: Manrope;
+    background-color: #23e259;
+    border-radius: 15px;
+    position: relative;
+    top:-45px;
+    font-weight: 800;
+    transition: all 0.1s ease-in-out;
+}
+.header-home:hover{
+    color: #ff0000;
+}
+.header-games:hover{
+    color: #00c510;
+}
+.header-recents:hover{
+    color: #0084ff;
+}
