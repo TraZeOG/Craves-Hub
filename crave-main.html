@@ -29,7 +29,7 @@
                 </a>
                 <a href="crave-main.html" class="header-home">Accueil</a>
                 <a href="jeux.html" class="header-games">Jeux</a>
-                <a href="#jeu-recents" class ="header-recents">Récents</a>
+                <a href="#container-programs" class ="header-recents">Récents</a>
                 </span>
             </nav>
 
@@ -47,17 +47,11 @@
 
             </section>
 
-            <section>
-
-                <a href="#jeu-recents" class="bouton-jeu">Télécharger les Jeux</a>
-
-            </section><br>
-
             <section class="section-2">
                 
-                <div class="icone">
-                <img src="images/jeu/newspaper.png" alt="Point d'interrogation" class="question-mark">
-                <h2 class="pourquoi">Actus récentes</h2>
+                <div class="container-icon">
+                    <img src="images/jeu/newspaper.png" alt="Point d'interrogation" class="icon">
+                    <h2>Actus récentes</h2>
                 </div>
                 <p>Doan's Quest (version 3.3.1): <br> <br>
                     - correction d'un bug qui empêchait le joueur d'avancer sur une plateforme en mouvement <br>
@@ -65,59 +59,79 @@
                     - ajout de 7 niveaux en plus après le niveau 20 <br>
                     - ajout de 3 nouveaux skins épiques et originaux dans la boutique du jeu<p>
                 <p class="merci">Merci pour votre soutien pour Doan!</p>
-                <div id="jeu-recents"></div>
+                <div id="container-programs"></div>
+    
             </section><br>
 
             <section class="section-4">
 
-                <div class="icone">
-                    <img src="images/jeu/clock.png" alt="Horloge" class="horloge">
-                    <h2>Jeux récents:</h2>
+                <div class="container-icon">
+                    <img src="images/jeu/clock.png" alt="Horloge" class="icon">
+                    <h2>Programmes:</h2>
                 </div>
-                <div class="jeu-recents">
-                    <div class="lien-conteneur-jeu-red">
-                        <h3>Doan's Quest</h3>
-                        <p>Doan Duhong, né le 7 Octobre 1946 dans la ville d’Haïphong, au Vietnam, n’a que 9 ans lorsque la guerre du Vietnam éclate. Il se retrouve alors séparé de sa soeur jumelle, Lihn Duhong. <br> 
-                            Ce jeu permet de suivre l’épopée qui s’ensuit pendant laquelle Doan mettra tout en oeuvre pour retrouver sa soeur.</p>
-                        <br><br><hr>
-                        <a href="downloads\doans_quest.zip" class="photo-hover">Télécharger le jeu</a>
-                        </div>
-                    <h3>Tous les jeux</h3>
-                    <div class="lien-conteneur-jeu-red">
-                        <h3>Arakada 1</h3>
-                        <p>Arakada 1 est le premier jeu de la série Arakada, une série de jeux d'arcade tous faits en un jour. <br>
-                            Dans Arakada 1, vous contrôlez un potit panier mignon et vous devez ramassez les fruits qui tombent du ciel en prenant soin d'éviter les bombes. Vous disposez de trois vies, bonne chance!</p>
-                        <br><br><hr>
-                        <a href="downloads\Arakada_1.zip" class="photo-hover">Télécharger le jeu</a>
-                        </div>
-                    <div class="lien-conteneur-jeu-red">
-                        <h3>Arakada 2</h3>
-                        <p>Arakada 1 est le premier jeu de la série Arakada, une série de jeux d'arcade tous faits en un jour. <br>
-                            Dans Arakada 2, votre vaisseau citron s'est égaré sur l'autoroute la plus empruntée de la galaxie. Vous êtes aux commandes et devez esquiver le plus longtemps possible les vaisseaumobilistes et les météorites en attendant la dépanneuse.</p>
-                        <br><br><hr>
-                        <a href="downloads\Arakada_2.zip" class="photo-hover">Télécharger le jeu</a>
-                        </div>
-                    <div class="lien-conteneur-jeu-red">
-                        <h3>DL Cleaner</h3><br>
-                        <p>Le dossier Téléchargements finit rapidement par devenir une vraie poubelle lorsqu'il n'est pas régulièremenet nettoyé.<br>
-                            DL Cleaner est un court programme permettant de trier facilement votre fichier Téléchargements en rangeant tous les fichiers dans différents dossiers adaptés.
-                        </p>
-                        <br><br><hr>
-                        <a href="downloads\download_cleaner.zip" class="photo-hover">Télécharger le jeu</a>
-                    </div>
-                    <div class="lien-conteneur-jeu-off">
-                        <h3 class="soon">soon...</h3><br>
-                        <p>  -  Ce jeu est en cours de développement et n'est pas encore disponible.  -  </p><br><br>
-                        <br><br><hr>
-                        <a href="jeu.html" class="photo-hover">[ 06/2024 ]</a>
-                    </div>
-
+                <div class="categories">
+                    <button class="button-categories" data-category="populaires">Populaires</button>
+                    <button class="button-categories" data-category="jeux">Jeux vidéos</button>
+                    <button class="button-categories" data-category="programmes">Programmes</button>
                 </div>
-            </section>
-            <section>
-                <div class="retour">
-                <p class="suggestion">Une idée, une suggestion?</p>
-                <a href="mailto:doan.contact@gmail.com" class="contact" title="On sera heureux de vous répondre :)">Nous Contacter</a>
+                <script src="main.js"></script>
+                <div class="container-programs">
+                    <article class="program populaires jeux" style="background-image: url('images/doans-quest.png');">
+                        <a href="games/doans-quest.html">
+                            <div class="article-content">
+                                <h3>Doan's Quest</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="program populaires jeux" style="background-image: url('images/arakada1.png');">
+                        <a href="games/arakada1.html">
+                            <div class="article-content">
+                                <h3>Arakada 1</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="program populaires jeux" style="background-image: url('images/arakada2.png');">
+                        <a href="games/arakada2.html">
+                            <div class="article-content">
+                                <h3>Arakada 2</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="program populaires programmes" style="background-image: url('images/download_cleaner.png');">
+                        <a href="games/dl_cleaner.html">
+                            <div class="article-content">
+                                <h3>DL Cleaner</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="program programmes" style="background-image: url('images/photos-sorter.png');">
+                        <a href="games/photos-sorter.html">
+                            <div class="article-content">
+                                <h3>Photos Sorter</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="program programmes" style="background-image: url('images/automatic_parcoursup.png');">
+                        <a href="games/automatic-parcoursup.html">
+                            <div class="article-content">
+                                <h3>Automatic ParcourSup</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="program populaires programmes" style="background-image: url('images/time_tracker.ico');">
+                        <a href="games/time-tracker.html">
+                            <div class="article-content">
+                                <h3>Time Tracker</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="program programmes" style="background-image: url('images/project_stamina.png');">
+                        <a href="games/project-stamina.html">
+                            <div class="article-content">
+                                <h3>Project Stamina (bêta)</h3>
+                            </div>
+                        </a>
+                    </article>
                 </div>
             </section>
         </main>
@@ -128,13 +142,6 @@
                 <a href="crave-main.html" class="reseau">
                     <img src="images/logo_crave.png" alt="Logo Crave" class="logo">
                 </a>
-                <p class="reseau-legende">Mes réseaux:</p>
-                <a target="_blank" href="https://www.instagram.com/">
-                    <img src="images\instagram.png" title="Mon compte Instagram" alt="Logo Instagram" class="reseau-no-padding">
-                </a>
-                <a target="_blank" href="https://twitter.com/">
-                    <img src="images/twitter.png" title="Ma page Twitter" alt="Logo Twitter" class="reseau"></a>
-                <p class="reseau-legende">Suggestions:</p>
                 <a href="mailto:doan.contact@gmail.com">
                     <img src="images/mail.png" alt="Logo mail" class="reseau-no-padding">
                 </a>
