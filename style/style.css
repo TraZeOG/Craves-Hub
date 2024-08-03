@@ -1,48 +1,36 @@
+
+/* 
+Généralités -----------------------------------------------------
+*/
+
 * {
     margin: 0;
 }
+
 body {
     font-family: 'Tilt Neon', sans-serif;
     font-size: 1em;
     background-image: #ffffff;
     color: #000000;
 }
-a{
-    color: #000000;
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: underline;
-}
-p{
-    font-size: 1.2em;
-}
-ul, ol, .lien{
-    font-size: 1em;
-}
-.lien{
-    text-decoration: none;
-}
+
+/* 
+Structure de la page -----------------------------------------------------
+*/
+
 header, footer{
     background-color: #f1f1f1;
     padding: 20px 50px 20px 20px;
 }
-.reseau:hover{
-    opacity: 0.5;
-}
-.reseau{
-    margin-left: 5px;
-    transition: all 0.1s ease-in-out;
-}
-p, li{
-    font-size: 1.1em;
-}
+
 section{
-    padding: 80px;
+    padding: 40px;
 }
+
 nav a{
     margin-left: 30px;
 }
+
 footer,
 nav {
   display: flex;
@@ -50,39 +38,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-.reseau-no-padding{
-    padding-left: 0px;
-    transition: all 0.1s ease-in-out;
-}
-.reseau-legende{
-    padding-left: 60px;
-    padding-right: 0px;
-    color: #242424;
-    font-size: 1em;
-}
-.reseau-no-padding:hover{
-    opacity: 0.5;
-}
-.photo-hover{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    padding: 10px 0px;
-    margin: 30px 150px ;
-    transition: all 0.1s ease-in-out;
-    color:#ffffff;
-    background-color: #1C8139;
-    border-radius: 15px;
-    font-weight: 600;
-}
-.photo-hover:hover {
-    background-color: #126b2b;
-    z-index: 2;
-    font-size: 1.6em;
-    margin: 30px 145px;
-}
+
 header{
     position: sticky;
     left: 0;
@@ -90,17 +46,69 @@ header{
     border-bottom: #0B162C 1px solid;
     z-index: 3;
 }
+
+.header-home:hover{color: #ff0000;}
+.header-games:hover{color: #00c510;}
+.header-recents:hover{color: #0084ff;}
+
+/* 
+Taille des affichages -----------------------------------------------------
+*/
+
+h1{
+    font-size: 5em;
+}
+
+h2{
+    font-size: 3.4em;
+}
+
+h3{
+    font-size: 2.3em;
+    padding: 30px;
+    text-align: center;
+}
+
+p{
+    font-size: 1.2em;
+}
+
 .container-icon{
     display: flex;
     align-items: center;
     padding-bottom: 60px;
+    gap: 20px;
 }
-.mentions-legales{
-    margin-left: 75vw;
+
+a{
+    color: #000000;
+    text-decoration: none;
 }
-.flex{
-    display: flex;
+
+a img{
+    transition: all 0.1s ease-in-out;
 }
-.title{
-    font-size: 2.5em;
+
+a img:hover{
+    opacity: 0.7;
+}
+
+button {
+    transition: transform 0.1s ease;
+    transform: scale(1);
+    user-select: none;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.icon{
+    width: 60px;
+    height: 60px;
 }

@@ -1,17 +1,7 @@
-.sous-titre::first-letter {
-    font-size: 1.1em;
-}
-.sous-titre {
-    position: relative;
-    top: 40px;
-    text-align: center;
-}
 
-
-.bienvenue{
-    font-size: 5em;
-    left: -1200px;
-}
+/* 
+Header + Footer -----------------------------------------------------
+*/
 
 .logo{
     width: 105px;
@@ -27,85 +17,50 @@
     top: 5px;
 }
 
-.sous-titre::first-letter{
-    font-size: 1.1em;
+/* 
+Section 1 -----------------------------------------------------
+*/
+
+.section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 50px;
 }
 
-.sous-titre{
-    position: relative;
-    top:25px;
-    left: -25px;
+.fleur{
+    width: 200px;
+    height: 200px;
 }
 
 .gif{
     border-radius: 50px;
     border: #B5BAD8 2px solid;
     padding: 4px 6px;
-    margin: 86px 24px;
     width: 650px;
     height: 360px;
-    position: relative;
-    left:-80px;
 }
 
-.ingame-img{
-    width: 25vw;
-    height: 15vw;
-}
-
-.section-1 {
-    display: flex;
-    width: 55%;
-    margin: auto;
-    gap: 20px;
-    padding-bottom: 100px;
-}
-
-.section-1 div{
-    padding-right: 60px;
-    padding-top: 40px;
-    position: relative;
-    left: -80px;
-}
-
-button {
-    transition: transform 0.1s ease; /* Transition pour rendre l'animation fluide */
-    transform: scale(1);
-    user-select: none;
-}
-
-button:active {
-    transform: scale(0.95); /* Réduire la taille du bouton lorsqu'on maintient le clic */
-}
-
-.bouton-jeu {
-    background-color: #1c8139;
-    color: white;
-    font-size: 2.2vw;
-    margin-top: 1vh;
-    padding: 1vh 1vw;
-    border-radius: 0.3vw;
-    cursor: pointer;
-    border: #ffffff9f 0.4vw solid;
-    outline: #0000008f 1px solid;
-    transition: all 0.2s ease-in-out;
-}
-
-button:hover {
-    text-decoration: none;
-    opacity: 0.8;
-}
+/* 
+Section 2 -----------------------------------------------------
+*/
 
 .section-2{
     background-color: #DADADA;
-    padding: 100px;
+    margin-top: 50px;
+    padding: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* 
+Section 3 -----------------------------------------------------
+*/
+
 .categories{
-    padding: 20px 0 80px;
+    padding-bottom: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,70 +126,7 @@ article a {
     text-decoration: none;
 }
 
-.section-4{
-    padding: 0;
-    margin: 70px;
-}
-
-h3{
-    font-size: 2.3em;
-    padding: 30px;
-    text-align: center;
-}
-
-.soon{
-    color:brown;
-}
-
-a:hover{
-    text-decoration: none;
-}
-
-h1{
-    font-size: 2.4em;
-    text-align: start;
-}
-
-h2{
-    font-size: 2.2em;
-}
-
-.merci{
-    font-size: 1.6em;
-    padding-top: 10px;
-}
-
-h2::first-letter{
-    font-size: 1.7em;
-    padding-left: 40px;
-}
-
-.fin{
-    font-size: 4em;
-    padding:  0 20px 20px 20px;
-}
-
-.icon{
-    width: 60px;
-    height: 60px;
-}
-
-.fleur{
-    padding: 90px 0 ;
-    width: 200px;
-    height: 200px;
-    position: relative;
-    left: -100px;
-}
-
-.header-home:hover{
-    color: #ff0000;
-}
-
-.header-games:hover{
-    color: #00c510;
-}
-
-.header-recents:hover{
-    color: #0084ff;
+.ingame-img{
+    width: 25vw;
+    height: 15vw;
 }
