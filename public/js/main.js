@@ -1,36 +1,42 @@
+
 document.addEventListener("DOMContentLoaded", function() {
-    // Récupère tous les boutons de catégories
     const categoryButtons = document.querySelectorAll('.button-categories');
-    // Sélectionne le conteneur des programmes
-    const programsContainer = document.getElementById('programs-container');
-    // Par défaut, afficher la catégorie "populaires"
+    const programsContainer = document.querySelector('.container-programs');
     const defaultCategory = 'populaires';
-    const defaultButton = document.querySelector(`.button-categories[data-category="${defaultCategory}"]`);
-    
-    // Affiche la catégorie par défaut et met à jour les styles
-    showCategory(defaultCategory);
-    updateButtonStyles(defaultButton);
 
-    // Ajouter un événement click à chaque bouton
-    categoryButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Récupère la catégorie du bouton cliqué
-            const category = this.getAttribute('data-category');
-            // Affiche la catégorie correspondante
-            showCategory(category);
-            // Mettre à jour le style des boutons
-            updateButtonStyles(this);
-        });
-    });
+    // Charger les données des programmes à partir du fichier JSON
+    fetch('http://localhost:3000/data/programs.json')
+        .then(response => response.json())
+        .then(data => {
+            // Afficher la catégorie par défaut
+            showCategory(defaultCategory, data.programs);
+            updateButtonStyles(document.querySelector(`.button-categories[data-category="${defaultCategory}"]`));
 
-    function showCategory(category) {
-        // Masquer tous les programmes
-        const programs = document.querySelectorAll('.program');
+            // Ajouter un événement click à chaque bouton de catégorie
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    showCategory(category, data.programs);
+                    updateButtonStyles(this);
+                });
+            });
+        })
+        .catch(error => console.error('Erreur lors du chargement des programmes:', error));
+
+    function showCategory(category, programs) {
+        programsContainer.innerHTML = ''; // Vider le conteneur des programmes
         programs.forEach(program => {
-            if (program.classList.contains(category)) {
-                program.style.display = 'block'; // Afficher les programmes correspondants
-            } else {
-                program.style.display = 'none'; // Masquer les autres programmes
+            if (program.categories.includes(category)) {
+                const programElement = document.createElement('article');
+                programElement.style.backgroundImage = `url(${program.image})`;
+                programElement.innerHTML = `
+                <a href="${program.link}">
+                    <div class="article-content">
+                        <h3>${program.title}</h3>
+                    </div>
+                </a>`;
+
+                programsContainer.appendChild(programElement);
             }
         });
     }
@@ -38,11 +44,12 @@ document.addEventListener("DOMContentLoaded", function() {
     function updateButtonStyles(activeButton) {
         categoryButtons.forEach(button => {
             button.classList.remove('active');
-            button.style.backgroundColor = '#FFFFFF'; // Réinitialiser le background des boutons
-            button.style.color = '#0084ff'; // Réinitialiser la couleur du texte des boutons
+            button.style.backgroundColor = '#FFFFFF';
+            button.style.color = '#0084ff';
         });
         activeButton.classList.add('active');
-        activeButton.style.backgroundColor = '#0084ff'; // Mettre en bleu le bouton actif
-        activeButton.style.color = '#FFFFFF'; // Mettre en blanc le texte du bouton actif
+        activeButton.style.backgroundColor = '#0084ff';
+        activeButton.style.color = '#FFFFFF';
     }
+
 });

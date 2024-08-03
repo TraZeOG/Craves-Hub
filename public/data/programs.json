@@ -1,0 +1,52 @@
+{
+  "programs": [
+    {
+      "title": "Doan's Quest",
+      "image": "../img/doans-quest.png",
+      "link": "../programs/doans-quest.html",
+      "categories": ["populaires", "jeux"]
+    },
+    {
+      "title": "Arakada 1",
+      "image": "../img/arakada1.png",
+      "link": "../programs/arakada1.html",
+      "categories": ["populaires", "jeux"]
+    },
+    {
+      "title": "Arakada 2",
+      "image": "../img/arakada2.png",
+      "link": "../programs/arakada2.html",
+      "categories": ["populaires", "jeux"]
+    },
+    {
+      "title": "DL Cleaner",
+      "image": "../img/download_cleaner.png",
+      "link": "../programs/dl_cleaner.html",
+      "categories": ["populaires", "programmes"]
+    },
+    {
+      "title": "Photos Sorter",
+      "image": "../img/photos-sorter.png",
+      "link": "../programs/photos-sorter.html",
+      "categories": ["programmes"]
+    },
+    {
+      "title": "Automatic ParcourSup",
+      "image": "../img/automatic_parcoursup.png",
+      "link": "../programs/automatic-parcoursup.html",
+      "categories": ["programmes"]
+    },
+    {
+      "title": "Time Tracker",
+      "image": "../img/time_tracker.ico",
+      "link": "../programs/time-tracker.html",
+      "categories": ["populaires", "programmes"]
+    },
+    {
+      "title": "Project Stamina (bêta)",
+      "image": "../img/project_stamina.png",
+      "link": "../programs/project-stamina.html",
+      "categories": ["programmes"]
+    }
+  ]
+}
