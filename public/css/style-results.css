@@ -1,0 +1,25 @@
+/* 
+Section 1 •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·
+*/
+
+.section-2{
+    background-color: #d1d1d167;
+    margin-top: 50px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 
+Section 2 •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·
+*/
+
+.section-2{
+    background-color: #ffffff67;
+    margin-top: 50px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

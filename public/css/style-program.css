@@ -1,22 +1,4 @@
 /* 
-Header + Footer •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·
-*/
-
-.logo{
-    width: 105px;
-    height: 31px;
-    position: relative;
-    top: 3px;
-}
-
-.language{
-    width: 20px;
-    height: 20px;
-    position: relative;
-    top: 5px;
-}
-
-/* 
 Section 1 •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·
 */
 
@@ -46,7 +28,7 @@ Section 2 •·•·•·•·•·•·•·•·•·•·•·•·•·•·
 */
 
 .section-2{
-    background-color: #DADADA;
+    background-color: #87ce8e67;
     margin-top: 50px;
     padding: 60px;
     display: flex;
@@ -59,7 +41,8 @@ Section 3 •·•·•·•·•·•·•·•·•·•·•·•·•·•·
 */
 
 .section-3{
-    background-color: #ececec;
+    margin-top: 50px;
+    background-color: #e0bbbbad;
     padding: 60px;
 }
 
@@ -68,74 +51,20 @@ Section 4 •·•·•·•·•·•·•·•·•·•·•·•·•·•·
 */
 
 .section-4{
+    background-color: #a0bfd39a;
+    margin-top: 50px;
+    padding: 60px 80px;
+}
+
+.section-4 p{
+    padding-left: 110px;
+}
+
+/* 
+Section 5 •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·
+*/
+
+.section-5{
     margin-top: 50px;
     padding: 60px;
 }
-
-.categories{
-    padding-bottom: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.button-categories{
-    font-size: 1.2em;
-    font-family: Manrope;
-    font-weight: 700;
-    border-radius: 50px;
-    color: #0084ff;
-    background-color: #DADADA;
-    padding: 10px 25px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.container-programs{
-    display: grid;
-    grid-template-columns: 25vw 25vw 25vw;
-    grid-template-rows: 15vw 15vw 15vw;
-    gap: 30px;
-    justify-content: center;
-}
-
-article {
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #0B162C;
-    outline: 2px solid #0B162C;
-    outline-offset: 3px;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s ease;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
-}
-
-.article-content {
-    position: relative;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.15);
-    color: #FFFFFF;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-shadow: 0 0 15px #0B162C;
-}
-
-article:hover {
-    transform: scale(1.05);
-}
-
-article a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    color: inherit;
-    text-decoration: none;
-}
-

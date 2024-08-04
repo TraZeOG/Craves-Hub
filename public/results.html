@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Crave's Hub - Accueil</title>
+        <link rel="icon" href="img/craves-hub.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-results.css">
+        <script src="../js/main.js"></script>
+        <script src="js/results.js"></script>
+        <script src="js/search-bar.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+
+            <nav>
+                <span>
+                    <a href="crave-main.html">
+                        <img loading="lazy" src="img/logo_crave.png" alt="Logo Crave" class="logo">
+                    </a>
+                    <a href="crave-main.html">
+                        <img loading="lazy" src="img/home.svg" alt="Home button" class="home">
+                    </a>
+                </span>
+
+                <form id="search-form" action="results.html">
+                    <input type="text" id="search-input" placeholder="Recherchez un programme..." />
+                </form>
+                <span>
+                    <img loading="lazy" src="img/france.png" alt="Drapeau français" class="language">
+                    <a href="crave-main.html" class="header-home">Accueil</a>
+                    <a href="jeux.html" class="header-games">Jeux</a>
+                    <a href="#container-programs" class ="header-recents">Récents</a>
+                </span>
+            </nav>
+
+        </header>
+
+
+            <section class="section-1">
+
+                <h2 id="results-title">Résultats de la recherche</h2>
+                <div class="container-programs" id="results-container">
+                    <!-- Les résultats de la recherche seront injectés ici -->
+                </div>
+
+            </section>
+
+            <section class="section-2">
+
+                <div class="container-icon">
+                    <img loading="lazy" src="../img/star.png" alt="Horloge" class="icon">
+                    <h2>Cela pourrait aussi vous plaire:</h2>
+                </div>
+                <div class="categories">
+                    <button class="button-categories" data-category="populaires">Populaires</button>
+                    <button class="button-categories" data-category="jeux">Jeux vidéos</button>
+                    <button class="button-categories" data-category="programmes">Programmes</button>
+                </div>
+                <div class="container-programs" id="categories-container">
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+
+            <nav>
+                <a href="crave-main.html" class="reseau">
+                    <img loading="lazy" src="img/logo_crave.png" alt="Logo Crave" class="logo">
+                </a>
+                <a href="mailto:traze.contact@gmail.com">
+                    <img loading="lazy" src="img/mail.png" alt="Logo mail" class="reseau-no-padding">
+                </a>
+            </nav>
+    
+        </footer>
+
+    </body>
+</html>

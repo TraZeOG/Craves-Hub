@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     const categoryButtons = document.querySelectorAll('.button-categories');
-    const programsContainer = document.querySelector('.container-programs');
+    const programsContainer = document.getElementById('categories-container');
     const defaultCategory = 'populaires';
 
     // Charger les données des programmes à partir du fichier JSON

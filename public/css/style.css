@@ -1,3 +1,9 @@
+:root {
+	--delay: 0;
+	--duration: 800ms;
+	--iterations: 1;
+    --shadow-opacity: 0.3;
+}
 
 /* 
 Généralités •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·
@@ -18,9 +24,45 @@ body {
 Structure de la page •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·
 */
 
+.logo{
+    width: 105px;
+    height: 31px;
+    position: relative;
+    top: 3px;
+}
+
+.language{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+}
+
+.home{
+    width: 25px;
+    height: 25px;
+}
+
+form input {
+    padding: 6px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+    width: 30vw;
+}
+
+form input:hover {
+    border: 1px solid #969696;
+}
+
+
+
+
+
 header, footer{
     background-color: #f1f1f1;
     padding: 20px 50px 20px 20px;
+    user-select: none;
 }
 
 section{
@@ -31,7 +73,6 @@ nav a{
     margin-left: 30px;
 }
 
-footer,
 nav {
   display: flex;
   flex-direction: row;
@@ -75,7 +116,7 @@ p{
 .container-icon{
     display: flex;
     align-items: center;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
     gap: 20px;
 }
 
@@ -109,18 +150,187 @@ button:hover {
 
 .bouton-download {
     background-color: #1c8139;
+    font-family: 'Tilt Neon', sans-serif;
     color: white;
-    font-size: 1.7vw;
+    font-size: 1.3vw;
     margin-top: 1vh;
-    padding: 1vh 1vw;
+    padding: 0.7vh 0.7vw;
     border-radius: 0.3vw;
     cursor: pointer;
-    border: #ffffff9f 0.4vw solid;
     outline: #0000008f 1px solid;
     transition: all 0.2s ease-in-out;
+    animation: reveal-shadow 1s var(--duration) var(--shadow-opacity) forwards;
 }
 
 .icon{
     width: 60px;
     height: 60px;
+}
+
+
+/* 
+Programs •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·
+*/
+
+.categories{
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.button-categories{
+    font-size: 1.2em;
+    font-family: Manrope;
+    font-weight: 700;
+    border-radius: 50px;
+    color: #0084ff;
+    background-color: #DADADA;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container-programs{
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: 15vw 15vw 15vw;
+    gap: 30px;
+    justify-content: center;
+}
+
+article {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #0B162C;
+    outline: 2px solid #0B162C;
+    outline-offset: 3px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
+    box-shadow: 0 0 1.2vw rgba(0, 0, 0, var(--shadow-opacity));
+}
+
+.article-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.15);
+    color: #FFFFFF;
+    user-select: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 0 0 15px #0B162C;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+article a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.ingame-img{
+    width: 25vw;
+    height: 15vw;
+}
+
+
+
+/* •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
+
+
+.reveal-text-blue-1::after {
+    background-color: #2897ff;
+}
+
+.reveal-text-blue-2::after {
+    background-color: #0065c4;
+}
+
+.reveal-text-blue-1,
+.reveal-text-blue-1::after,
+.reveal-text-blue-2,
+.reveal-text-blue-2::after {
+	animation-delay: var(--animation-delay, 2s);
+	animation-iteration-count: var(--iterations, 1);
+	animation-duration: var(--duration, 800ms);
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.reveal-text-blue-1,
+.reveal-text-blue-2 {
+	--animation-delay: var(--delay, 0);
+	--animation-duration: var(--duration, 800ms);
+	--animation-iterations: var(--iterations, 1);
+	position: relative;
+	animation-name: clip-text;
+	white-space: nowrap;
+	
+	&::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: scaleX(0);
+        transform-origin: 0 50%;
+        pointer-events: none;
+        animation-name: text-revealer;
+	}
+	
+}
+
+
+@keyframes clip-text {
+	from {
+		clip-path: inset(0 100% 0 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+
+@keyframes text-revealer {
+	
+	0%, 50% {
+		transform-origin: 0 50%;
+	}
+	
+	60%, 100% {
+		transform-origin: 100% 50%;		
+	}
+
+	
+	60% {
+		transform: scaleX(1);
+	}
+	
+	100% {
+		transform: scaleX(0);
+	}
+}
+
+
+@keyframes reveal-shadow {
+    from {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    to {
+        box-shadow: 0 0 1.2vw rgba(0, 0, 0, var(--shadow-opacity));
+    }
 }

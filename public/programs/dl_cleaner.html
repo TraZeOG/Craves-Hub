@@ -21,14 +21,23 @@
         <header>
 
             <nav>
-                <a href="../crave-main.html">
-                    <img src="../img/logo_crave.png" alt="Logo Crave" class="logo">
-                </a>
                 <span>
-                <img src="../img/france.png" alt="Drapeau français" class="language">
-                <a href="../crave-main.html" class="header-home">Accueil</a>
-                <a href="../jeux.html" class="header-games">Jeux</a>
-                <a href="#container-programs" class ="header-recents">Récents</a>
+                    <a href="../crave-main.html">
+                        <img loading="lazy" src="../img/logo_crave.png" alt="Logo Crave" class="logo">
+                    </a>
+                    <a href="../crave-main.html">
+                        <img loading="lazy" src="../img/home.svg" alt="Home button" class="home">
+                    </a>
+                </span>
+
+                <form id="search-form" action="../results.html">
+                    <input type="text" id="search-input" placeholder="Recherchez un programme..." />
+                </form>
+                <span>
+                    <img loading="lazy" src="../img/france.png" alt="Drapeau français" class="language">
+                    <a href="../crave-main.html" class="header-home">Accueil</a>
+                    <a href="../jeux.html" class="header-games">Jeux</a>
+                    <a href="#container-programs" class ="header-recents">Récents</a>
                 </span>
             </nav>
 
@@ -38,44 +47,63 @@
 
             <section class="section-1">
 
-                <img src="../img/jeu/flower.png" alt="Fleur" class="fleur">
+                <img loading="lazy" src="../img/jeu/flower.png" alt="Fleur" class="fleur">
                 <h1 class="bienvenue">Programme: <br>Download Cleaner</h1>
-                <img src="../img/download_cleaner.png" alt="ingame picture" class="gif">
+                <img loading="lazy" src="../img/download_cleaner.png" alt="ingame picture" class="gif">
 
             </section>
 
             <section class="section-2">
                 
                 <div class="container-icon">
-                    <img src="../img/jeu/newspaper.png" alt="Newspaper" class="icon">
-                    <h2>Actus récentes</h2>
+                    <img loading="lazy" src="../img/ghost.png" alt="Ghost" class="icon">
+                    <h2>À propos du jeu</h2>
                 </div>
-                <p>Doan's Quest (version 3.3.1): <br> <br>
-                    - correction d'un bug qui empêchait le joueur d'avancer sur une plateforme en mouvement <br>
-                    - ajout du choix de skin et de l'avancement dans les niveaux dans la data sauvegardée <br>
-                    - ajout de 7 niveaux en plus après le niveau 20 <br>
-                    - ajout de 3 nouveaux skins épiques et originaux dans la boutique du jeu<p>
+                <p>Le dossier "Téléchargements" de l'ordinateur est un dossier qui peut vite se <br>
+                    retrouver saturé de fichiers indésirables si on ne le nettoie pas <br>
+                    régulièrement. Cette tâche fastidieuse peut vous être épargnée si vous <br>
+                    disposez de DL Cleaner, un programme qui vous permet, en un seul clic, de <br>
+                    ranger tous les fichiers de votre dossier "Téléchargement" dans plusieurs <br>
+                    dossiers adaptés tels que: Photos, Videos, Code, Documents, en se basant sur<br>
+                     l'extension de chaque fichier. N'attendez donc plus et adoptez DL Cleaner, <br>
+                     votre compagnon de rangement intelligent.<p>
     
             </section>
 
             <section class="section-3">
 
                 <div class="container-icon">
-                    <img src="../img/jeu/clock.png" alt="Horloge" class="icon">
+                    <img loading="lazy" src="../img/jeu/clock.png" alt="Horloge" class="icon">
                     <h2>Dernières versions du jeu:</h2>
                 </div>
                 <div>
-                    <h3>version 3.3.1:</h3>
-                    <a href="downloads/download_cleaner.zip">
+                    <h3>version 1.2.11:</h3>
+                    <a href="downloads/DL Cleaner/DL Cleaner v1.2.11.zip">
                         <button class="bouton-download" style="margin: 20px 80px 0">Télécharger</button>
                     </a>
                 </div>
             </section>
 
             <section class="section-4">
+                
+                <div class="container-icon">
+                    <img loading="lazy" src="../img/jeu/newspaper.png" alt="Newspaper" class="icon">
+                    <h2>Actus récentes</h2>
+                </div>
+                <p>DL Cleaner (version 1.2.11): <br> <br>
+                    - Correction de divers bugs <br>
+                    - Ajout de la version française du programme <br>
+                    - Le programme est parfois détecté comme un virus :/ je vais arranger ça <br>
+                    (y'a pas de virus c'est juste que bah windows n'aime pas qu'un programme inconnu déplace des fichiers) <br>
+                    - [soon] ajout d'une interface graphique  pour que tout soit plus joli<br>
+                    et plus compréhensible et plus personnalisable et plus cool et plus sympa <p>
+    
+            </section>
+
+            <section class="section-5">
 
                 <div class="container-icon">
-                    <img src="../img/star.png" alt="Horloge" class="icon">
+                    <img loading="lazy" src="../img/star.png" alt="Horloge" class="icon">
                     <h2>Similaires:</h2>
                 </div>
                 <div class="categories">
@@ -84,7 +112,7 @@
                     <button class="button-categories" data-category="programmes">Programmes</button>
                 </div>
                 <script src="../js/main.js"></script>
-                <div class="container-programs">
+                <div class="container-programs" id="categories-container">
 
                 </div>
             </section>
@@ -95,10 +123,10 @@
 
             <nav>
                 <a href="../crave-main.html" class="reseau">
-                    <img src="../img/logo_crave.png" alt="Logo Crave" class="logo">
+                    <img loading="lazy" src="../img/logo_crave.png" alt="Logo Crave" class="logo">
                 </a>
                 <a href="mailto:traze.contact@gmail.com">
-                    <img src="../img/mail.png" alt="Logo mail" class="reseau-no-padding">
+                    <img loading="lazy" src="../img/mail.png" alt="Logo mail" class="reseau-no-padding">
                 </a>
             </nav>
     

@@ -14,6 +14,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/style-main.css">
+        <script src="js/main.js"></script>
+        <script src="js/search-bar.js"></script>
     </head>
 
     <body>
@@ -21,14 +23,23 @@
         <header>
 
             <nav>
-                <a href="crave-main.html">
-                    <img src="img/logo_crave.png" alt="Logo Crave" class="logo">
-                </a>
                 <span>
-                <img src="img/france.png" alt="Drapeau français" class="language">
-                <a href="crave-main.html" class="header-home">Accueil</a>
-                <a href="jeux.html" class="header-games">Jeux</a>
-                <a href="#container-programs" class ="header-recents">Récents</a>
+                    <a href="crave-main.html">
+                        <img loading="lazy" src="img/logo_crave.png" alt="Logo Crave" class="logo">
+                    </a>
+                    <a href="crave-main.html">
+                        <img loading="lazy" src="img/home.svg" alt="Home button" class="home">
+                    </a>
+                </span>
+
+                <form id="search-form" action="results.html">
+                    <input type="text" id="search-input" placeholder="Recherchez un programme..." />
+                </form>
+                <span>
+                    <img loading="lazy" src="img/france.png" alt="Drapeau français" class="language">
+                    <a href="crave-main.html" class="header-home">Accueil</a>
+                    <a href="jeux.html" class="header-games">Jeux</a>
+                    <a href="#container-programs" class ="header-recents">Récents</a>
                 </span>
             </nav>
 
@@ -37,24 +48,24 @@
         <main>
             <section class="section-1">
 
-                <img src="img/jeu/flower.png" alt="Fleur" class="fleur">
+                <img loading="lazy" src="img/jeu/flower.png" alt="Fleur" class="fleur">
                 <h1 class="bienvenue">Bienvenue sur <br>Crave's Hub !</h1>
-                <img src="img/ingame_picture.jpg" alt="ingame picture" class="gif">
+                <img loading="lazy" src="img/ingame_picture.jpg" alt="ingame picture" class="gif">
 
             </section>
 
             <section class="section-2">
                 
                 <div class="container-icon">
-                    <img src="img/jeu/newspaper.png" alt="Point d'interrogation" class="icon">
+                    <img loading="lazy" src="img/jeu/newspaper.png" alt="Point d'interrogation" class="icon">
                     <h2>Actus récentes</h2>
                 </div>
                 <p>Doan's Quest (version 3.3.1): <br> <br>
                     - correction d'un bug qui empêchait le joueur d'avancer sur une plateforme en mouvement <br>
                     - ajout du choix de skin et de l'avancement dans les niveaux dans la data sauvegardée <br>
                     - ajout de 7 niveaux en plus après le niveau 20 <br>
-                    - ajout de 3 nouveaux skins épiques et originaux dans la boutique du jeu<p>
-                <p class="merci">Merci pour votre soutien pour Doan!</p>
+                    - ajout de 3 nouveaux skins épiques et originaux dans la boutique du jeu
+                    <br><br>Merci pour votre soutien pour Doan!<p>
                 <div id="container-programs"></div>
     
             </section>
@@ -62,16 +73,16 @@
             <section class="section-3">
 
                 <div class="container-icon">
-                    <img src="img/jeu/clock.png" alt="Horloge" class="icon">
+                    <img loading="lazy" src="img/jeu/clock.png" alt="Horloge" class="icon">
                     <h2>Programmes:</h2>
                 </div>
+                
                 <div class="categories">
                     <button class="button-categories" data-category="populaires">Populaires</button>
                     <button class="button-categories" data-category="jeux">Jeux vidéos</button>
                     <button class="button-categories" data-category="programmes">Programmes</button>
                 </div>
-                <script src="js/main.js"></script>
-                <div class="container-programs">
+                <div class="container-programs" id="categories-container">
 
                 </div>
             </section>
@@ -82,10 +93,10 @@
 
             <nav>
                 <a href="crave-main.html" class="reseau">
-                    <img src="img/logo_crave.png" alt="Logo Crave" class="logo">
+                    <img loading="lazy" src="img/logo_crave.png" alt="Logo Crave" class="logo">
                 </a>
                 <a href="mailto:traze.contact@gmail.com">
-                    <img src="img/mail.png" alt="Logo mail" class="reseau-no-padding">
+                    <img loading="lazy" src="img/mail.png" alt="Logo mail" class="reseau-no-padding">
                 </a>
             </nav>
     

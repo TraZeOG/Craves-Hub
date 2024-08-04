@@ -21,14 +21,23 @@
         <header>
 
             <nav>
-                <a href="../crave-main.html">
-                    <img src="../img/logo_crave.png" alt="Logo Crave" class="logo">
-                </a>
                 <span>
-                <img src="../img/france.png" alt="Drapeau français" class="language">
-                <a href="../crave-main.html" class="header-home">Accueil</a>
-                <a href="../jeux.html" class="header-games">Jeux</a>
-                <a href="#container-programs" class ="header-recents">Récents</a>
+                    <a href="../crave-main.html">
+                        <img loading="lazy" src="../img/logo_crave.png" alt="Logo Crave" class="logo">
+                    </a>
+                    <a href="../crave-main.html">
+                        <img loading="lazy" src="../img/home.svg" alt="Home button" class="home">
+                    </a>
+                </span>
+
+                <form id="search-form" action="../results.html">
+                    <input type="text" id="search-input" placeholder="Recherchez un programme..." />
+                </form>
+                <span>
+                    <img loading="lazy" src="../img/france.png" alt="Drapeau français" class="language">
+                    <a href="../crave-main.html" class="header-home">Accueil</a>
+                    <a href="../jeux.html" class="header-games">Jeux</a>
+                    <a href="#container-programs" class ="header-recents">Récents</a>
                 </span>
             </nav>
 
@@ -38,44 +47,69 @@
 
             <section class="section-1">
 
-                <img src="../img/jeu/flower.png" alt="Fleur" class="fleur">
+                <img loading="lazy" src="../img/jeu/flower.png" alt="Fleur" class="fleur">
                 <h1 class="bienvenue">Programme: <br>Doan's Quest</h1>
-                <img src="../img/doans-quest.png" alt="ingame picture" class="gif">
+                <img loading="lazy" src="../img/doans-quest.png" alt="ingame picture" class="gif">
 
             </section>
 
             <section class="section-2">
                 
                 <div class="container-icon">
-                    <img src="../img/jeu/newspaper.png" alt="Newspaper" class="icon">
-                    <h2>Actus récentes</h2>
+                    <img loading="lazy" src="../img/ghost.png" alt="Ghost" class="icon">
+                    <h2>À propos du jeu</h2>
                 </div>
-                <p>Doan's Quest (version 3.3.1): <br> <br>
-                    - correction d'un bug qui empêchait le joueur d'avancer sur une plateforme en mouvement <br>
-                    - ajout du choix de skin et de l'avancement dans les niveaux dans la data sauvegardée <br>
-                    - ajout de 7 niveaux en plus après le niveau 20 <br>
-                    - ajout de 3 nouveaux skins épiques et originaux dans la boutique du jeu<p>
+                <p>Doan's Quest est un jeu de plateforme dans lequel vous incarnez le personnage de Doan Duhong. <br>
+                    Celui-ci a perdu sa sœur et tente tant bien que mal de la retrouver. Mais pour cela il va <br> 
+                    devoir traverser tout un monde rempli d'obstacles mortels et de créatures hostiles. <br>
+                    Dans ce jeu vous aurez notamment accès à: <br>
+                    - 27 niveaux de difficulté croissante dans la campagne principale <br>
+                    - 16 minis-jeux <br>
+                    - la possibilité de créer et de jouer à vos propres niveaux <br>
+                    - une boutique avec plus de 10 skins à débloquer <br>
+                    - [soon] la possibilité de jouer à plusieurs <p>
     
             </section>
 
             <section class="section-3">
 
                 <div class="container-icon">
-                    <img src="../img/jeu/clock.png" alt="Horloge" class="icon">
+                    <img loading="lazy" src="../img/jeu/clock.png" alt="Horloge" class="icon">
                     <h2>Dernières versions du jeu:</h2>
                 </div>
                 <div>
-                    <h3>version 3.3.1:</h3>
-                    <a href="downloads/doans_quest.zip">
+                    <h3>version 3.2.3:</h3>
+                    <a href="downloads/Doan's Quest/Doan's Quest v3.2.3.zip">
+                        <button class="bouton-download" style="margin: 20px 80px 0">Télécharger</button>
+                    </a>
+                </div>
+                <div>
+                    <h3>version 2.2.5 (beta):</h3>
+                    <a href="downloads/Doan's Quest/Doan's Quest version 2.2.5 (beta).zip">
                         <button class="bouton-download" style="margin: 20px 80px 0">Télécharger</button>
                     </a>
                 </div>
             </section>
 
             <section class="section-4">
+                
+                <div class="container-icon">
+                    <img loading="lazy" src="../img/jeu/newspaper.png" alt="Newspaper" class="icon">
+                    <h2>Actus récentes</h2>
+                </div>
+                <p>Doan's Quest (version 3.2.3): <br> <br>
+                    - correction d'un bug qui empêchait le joueur d'avancer sur une plateforme en mouvement <br>
+                    - ajout du choix de skin et de l'avancement dans les niveaux dans la data sauvegardée <br>
+                    - ajout de 7 niveaux en plus après le niveau 20 <br>
+                    - ajout de 3 nouveaux skins épiques et originaux dans la boutique du jeu
+                    <br><br>Merci pour votre soutien à Doan!<p>
+    
+            </section>
+
+            <section class="section-5">
 
                 <div class="container-icon">
-                    <img src="../img/star.png" alt="Horloge" class="icon">
+                    <img loading="lazy" src="../img/star.png" alt="Horloge" class="icon">
                     <h2>Similaires:</h2>
                 </div>
                 <div class="categories">
@@ -84,7 +118,7 @@
                     <button class="button-categories" data-category="programmes">Programmes</button>
                 </div>
                 <script src="../js/main.js"></script>
-                <div class="container-programs">
+                <div class="container-programs" id="categories-container">
 
                 </div>
             </section>
@@ -95,10 +129,10 @@
 
             <nav>
                 <a href="../crave-main.html" class="reseau">
-                    <img src="../img/logo_crave.png" alt="Logo Crave" class="logo">
+                    <img loading="lazy" src="../img/logo_crave.png" alt="Logo Crave" class="logo">
                 </a>
                 <a href="mailto:traze.contact@gmail.com">
-                    <img src="../img/mail.png" alt="Logo mail" class="reseau-no-padding">
+                    <img loading="lazy" src="../img/mail.png" alt="Logo mail" class="reseau-no-padding">
                 </a>
             </nav>
     
